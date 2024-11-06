@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Registration - Perumathura Super Soccer League</title>
+    <link rel="stylesheet" href="styleee.css">
+    <script>
+        function goBack() {
+            window.location.href = 'soccer.html'; // Link to the main registration page
+        }
+    </script>
+</head>
+<body>
+    <!-- Header with Title and Back Button -->
+    <header>
+        <h1>Player Registration</h1>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </header>
+
+    <!-- Player Registration Form -->
+    <main>
+        <section id="player-registration-form">
+            <h2>Register as a Player</h2>
+            <form action="/submit_player_registration" method="POST">
+                <label for="player-name">Full Name:</label>
+                <input type="text" id="player-name" name="player_name" required>
+
+                <label for="player-email">Email:</label>
+                <input type="email" id="player-email" name="player_email" required>
+
+                <label for="player-phone">Phone Number:</label>
+                <input type="tel" id="player-phone" name="player_phone" required>
+
+                <label for="player-position">Position:</label>
+                <input type="text" id="player-position" name="player_position" required>
+
+                <label for="team-name">Team Name:</label>
+                <input type="text" id="team-name" name="team_name" required>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Perumathura Super Soccer League. All rights reserved.</p>
+    </footer>
+</body>
+</html>

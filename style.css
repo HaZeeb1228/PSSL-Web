@@ -1,0 +1,157 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px; /* Prevent content overlap with fixed header */
+}
+
+/* Header Styles */
+header {
+    background: rgba(60, 158, 158, 0.8); /* Initial semi-transparent background */
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix header to the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Solid background color when scrolled */
+header.scrolled {
+    background: rgba(60, 158, 158, 1); /* Solid color on scroll */
+}
+
+/* Logo and title aligned horizontally */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Navigation link styles */
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #2b7979; /* Darker teal for hover effect */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.buttons button {
+    background-color: #00796b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+/* Hover effect with gradient */
+.buttons button:hover {
+    background: linear-gradient(to right, #00796b, #00bfa5); /* Light gradient on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Active button effect */
+.buttons button:active {
+    transform: translateY(0px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .buttons button {
+    background: #3c9e9e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.hero .buttons button:hover {
+    background: #2b7979;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #3c9e9e;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}

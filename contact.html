@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Perumathura Super Soccer League</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Perumathura Super Soccer League Logo">
+            <h1>Perumathura Super Soccer League</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="soccer.html#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#others">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: <strong>contact@perumathurasoccer.com</strong></li>
+                <li>Phone: <strong>(123) 456-7890</strong></li>
+                <li>Address: <strong>123 Soccer Lane, Perumathura, Kerala</strong></li>
+            </ul>
+            <p>Alternatively, you can fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+            <!-- Contact Form -->
+            <form id="contact-form" action="submit_contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Perumathura Super Soccer League. All rights reserved.</p>
+    </footer>
+</body>
+</html>

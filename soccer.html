@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perumathura Super Soccer League</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function register(type) {
+            if (type === 'owner') {
+                window.location.href = 'owner.html'; // Link to owner registration page
+            } else if (type === 'team') {
+                window.location.href = 'team.html'; // Link to team registration page
+            } else if (type === 'player') {
+                window.location.href = 'player.html'; // Link to player registration page
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Perumathura Super Soccer League Logo">
+            <h1>Perumathura Super Soccer League</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#soccer.html">Home</a></li>
+                <li><a href="about.html">About</a></li> <!-- Link to the new about page -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#others">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="top" class="hero">
+            <div class="hero-text">
+                <h2>Join the Excitement!</h2>
+                <p>Welcome to the Perumathura Super Soccer League.<br>
+                     Register as an owner, team, or player and be part of the action.</p>
+            </div>
+            <div class="buttons">
+                <button onclick="register('owner')">Owner Registration</button>
+                <button onclick="register('team')">Team Registration</button>
+                <button onclick="register('player')">Player Registration</button>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Perumathura Super Soccer League. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

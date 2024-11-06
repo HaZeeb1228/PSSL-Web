@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f7fa; /* Light green background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: #00796b; /* Teal background for the header */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Align items to the edges */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    position: relative; /* Allows positioning of child elements */
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #e8f5e9; /* Light green for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #004d40; /* Darker teal on hover */
+}
+
+/* Back Button Styles */
+.back-button {
+    background: #ffffff;
+    color: #00796b;
+    border: 1px solid #00796b;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background: #b2dfdb; /* Muted teal on hover */
+    color: #004d40;
+}
+
+/* Form Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+#owner-registration-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#owner-registration-form h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+#owner-registration-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#owner-registration-form input[type="text"],
+#owner-registration-form input[type="email"],
+#owner-registration-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+#owner-registration-form input:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 121, 107, 0.3);
+}
+
+#owner-registration-form button {
+    width: 100%;
+    background: #00796b;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#owner-registration-form button:hover {
+    background: #004d40;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #004d40;
+    color: #fff;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
